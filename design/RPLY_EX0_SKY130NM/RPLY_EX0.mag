@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1719596937
+timestamp 1719598073
 << error_s >>
 rect 1070 600 1076 606
 rect 1064 594 1070 600
@@ -65,6 +65,7 @@ rect 4880 0 5320 40
 rect 800 -100 5400 0
 << metal1 >>
 rect 1001 960 5209 1019
+rect 3460 900 3540 960
 rect 1870 600 1930 606
 rect 1060 540 1070 600
 rect 1130 540 1140 600
