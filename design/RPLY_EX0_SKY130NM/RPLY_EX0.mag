@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1719598073
+timestamp 1719598487
 << error_s >>
 rect 1070 600 1076 606
 rect 1064 594 1070 600
@@ -113,4 +113,11 @@ use sky130_fd_pr__nfet_01v8_5CE34N  sky130_fd_pr__nfet_01v8_5CE34N_5
 timestamp 1719596467
 transform 1 0 4297 0 1 570
 box -297 -570 297 570
+<< labels >>
+flabel locali 1420 -80 1480 -20 0 FreeSans 480 0 0 0 VSS
+port 2 nsew
+flabel space 1420 960 1480 1020 0 FreeSans 480 0 0 0 IBPS_4U
+port 5 nsew
+flabel metal2 1440 540 1500 600 0 FreeSans 480 0 0 0 IBNS_20U
+port 4 nsew
 << end >>
