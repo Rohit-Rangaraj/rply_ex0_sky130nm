@@ -10,7 +10,7 @@ lab=IBPS_4U}
 N 30 -530 30 -480 {
 lab=IBPS_4U}
 N 30 -420 200 -420 {
-lab=#net1}
+lab=VSS}
 N 70 -450 160 -450 {
 lab=IBPS_4U}
 N 30 -530 120 -530 {
@@ -24,49 +24,25 @@ lab=IBNS_20U}
 N 200 -530 200 -520 {
 lab=IBNS_20U}
 N 200 -450 210 -450 {
-lab=#net1}
+lab=VSS}
 N 200 -420 210 -420 {
-lab=#net1}
+lab=VSS}
 N 210 -450 210 -420 {
-lab=#net1}
+lab=VSS}
 N 20 -450 30 -450 {
-lab=#net1}
+lab=VSS}
 N 20 -420 30 -420 {
-lab=#net1}
+lab=VSS}
 N 20 -450 20 -420 {
-lab=#net1}
-N 30 -420 30 -380 {
-lab=#net1}
-N 200 -420 200 -380 {
-lab=#net1}
-N 70 -350 160 -350 {
-lab=#net1}
-N 30 -400 120 -400 {
-lab=#net1}
-N 120 -400 120 -350 {
-lab=#net1}
-N 20 -350 30 -350 {
 lab=VSS}
-N 20 -320 30 -320 {
+N 120 -420 120 -370 {
 lab=VSS}
-N 20 -350 20 -320 {
-lab=VSS}
-N 200 -320 210 -320 {
-lab=VSS}
-N 210 -350 210 -320 {
-lab=VSS}
-N 200 -350 210 -350 {
-lab=VSS}
-N 30 -320 200 -320 {
-lab=VSS}
-N 120 -320 120 -270 {
-lab=VSS}
-N -110 -270 120 -270 {
+N -110 -370 120 -370 {
 lab=VSS}
 C {cborder/border_s.sym} 520 0 0 0 {
 user="wulff"
 company="wulff"}
-C {devices/ipin.sym} -110 -270 0 0 {name=p2 lab=VSS}
+C {devices/ipin.sym} -110 -370 0 0 {name=p2 lab=VSS}
 C {devices/ipin.sym} 250 -530 2 0 {name=p4 lab=IBNS_20U
 }
 C {devices/ipin.sym} -70 -530 0 0 {name=p5 lab=IBPS_4U}
@@ -85,34 +61,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 180 -450 0 0 {name=M2[4:0]
-W=3.6	
-L=0.36
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 50 -350 0 1 {name=M3
-W=3.6	
-L=0.36
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 180 -350 0 0 {name=M4[4:0]
 W=3.6	
 L=0.36
 nf=2
