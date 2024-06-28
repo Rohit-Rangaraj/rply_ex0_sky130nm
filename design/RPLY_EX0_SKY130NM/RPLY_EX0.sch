@@ -5,48 +5,72 @@ K {}
 V {}
 S {}
 E {}
-N -380 -530 -280 -530 {
+N -70 -530 30 -530 {
 lab=IBPS_4U}
-N -280 -530 -280 -480 {
+N 30 -530 30 -480 {
 lab=IBPS_4U}
-N -280 -420 -110 -420 {
-lab=VSS}
-N -190 -420 -190 -360 {
-lab=VSS}
-N -420 -360 -190 -360 {
-lab=VSS}
-N -240 -450 -150 -450 {
+N 30 -420 200 -420 {
+lab=#net1}
+N 70 -450 160 -450 {
 lab=IBPS_4U}
-N -280 -530 -190 -530 {
+N 30 -530 120 -530 {
 lab=IBPS_4U}
-N -190 -530 -190 -450 {
+N 120 -530 120 -450 {
 lab=IBPS_4U}
-N -110 -530 -60 -530 {
+N 200 -530 250 -530 {
 lab=IBNS_20U}
-N -110 -520 -110 -480 {
+N 200 -520 200 -480 {
 lab=IBNS_20U}
-N -110 -530 -110 -520 {
+N 200 -530 200 -520 {
 lab=IBNS_20U}
-N -110 -450 -100 -450 {
+N 200 -450 210 -450 {
+lab=#net1}
+N 200 -420 210 -420 {
+lab=#net1}
+N 210 -450 210 -420 {
+lab=#net1}
+N 20 -450 30 -450 {
+lab=#net1}
+N 20 -420 30 -420 {
+lab=#net1}
+N 20 -450 20 -420 {
+lab=#net1}
+N 30 -420 30 -380 {
+lab=#net1}
+N 200 -420 200 -380 {
+lab=#net1}
+N 70 -350 160 -350 {
+lab=#net1}
+N 30 -400 120 -400 {
+lab=#net1}
+N 120 -400 120 -350 {
+lab=#net1}
+N 20 -350 30 -350 {
 lab=VSS}
-N -110 -420 -100 -420 {
+N 20 -320 30 -320 {
 lab=VSS}
-N -100 -450 -100 -420 {
+N 20 -350 20 -320 {
 lab=VSS}
-N -290 -450 -280 -450 {
+N 200 -320 210 -320 {
 lab=VSS}
-N -290 -420 -280 -420 {
+N 210 -350 210 -320 {
 lab=VSS}
-N -290 -450 -290 -420 {
+N 200 -350 210 -350 {
+lab=VSS}
+N 30 -320 200 -320 {
+lab=VSS}
+N 120 -320 120 -270 {
+lab=VSS}
+N -110 -270 120 -270 {
 lab=VSS}
 C {cborder/border_s.sym} 520 0 0 0 {
 user="wulff"
 company="wulff"}
-C {devices/ipin.sym} -420 -360 0 0 {name=p2 lab=VSS}
-C {devices/ipin.sym} -60 -530 2 0 {name=p4 lab=IBNS_20U
+C {devices/ipin.sym} -110 -270 0 0 {name=p2 lab=VSS}
+C {devices/ipin.sym} 250 -530 2 0 {name=p4 lab=IBNS_20U
 }
-C {devices/ipin.sym} -380 -530 0 0 {name=p5 lab=IBPS_4U}
-C {sky130_fd_pr/nfet_01v8.sym} -260 -450 0 1 {name=M1
+C {devices/ipin.sym} -70 -530 0 0 {name=p5 lab=IBPS_4U}
+C {sky130_fd_pr/nfet_01v8.sym} 50 -450 0 1 {name=M1
 W=3.6	
 L=0.36
 nf=2
@@ -60,7 +84,35 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} -130 -450 0 0 {name=M2[4:0]
+C {sky130_fd_pr/nfet_01v8.sym} 180 -450 0 0 {name=M2[4:0]
+W=3.6	
+L=0.36
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8.sym} 50 -350 0 1 {name=M3
+W=3.6	
+L=0.36
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8.sym} 180 -350 0 0 {name=M4[4:0]
 W=3.6	
 L=0.36
 nf=2
