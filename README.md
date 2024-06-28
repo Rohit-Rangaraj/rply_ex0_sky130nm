@@ -14,8 +14,8 @@ Following Carsten Wulff's design tutorial from AIC2024 and AICEX.
 
 | What            | Lib/Folder       | Cell/Name |
 | :-              | :-:              | :-:       |
-| Schematic       | RPLY_EX0_SKY130NM | RPLY_EX0 |
-| Layout          | RPLY_EX0_SKY130NM | RPLY_EX0 |
+| Schematic       | RPLY_EX0_SKY130NM | RPLY_EX0.sch |
+| Layout          | RPLY_EX0_SKY130NM | RPLY_EX0.mag |
 | LPE             | RPLY_EX0_SKY130NM | RPLY_EX0 |
 
 
