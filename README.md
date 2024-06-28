@@ -2,14 +2,13 @@
 # RPLY_EX0_SKY130NM
 
 # Who
-rohit
+Rohit Rangaraj (rrohit)
 
 # Why
- <explain why you made this module>
+To learn analog ASIC design flow using open-source tools.
 
 # How
- <explain short how you made this module>
-
+Following Carsten Wulff's design tutorial from AIC2024 and AICEX.
 
 # What
 
